@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+.body {
+  position: relative;
+  padding-bottom: 4em;
+  min-height: 100vh;
+}
+
+.imagen {
+  width: 400px;
+  height: 300px;
+  height: auto;
+  margin: 10px;
+  display: block;
+}
+
+.bar-btn {
+  font-size: 25px;
+  color: rgb(0, 2, 0);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 120px;
+  background: rgba(222, 158, 87, 0.9);
+  text-align: center;
+}
+
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 45px;
+}
+
+.nav-menu li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav-menu {
+  height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+  display: block;
+}
+
+* { /*es el selector universal en CSS. De forma automática, el asterisco selecciona todos los elementos en un documento.*/
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto+Mono", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: #DE9E31;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-left: 20px;
+}
+
+/*INICIO VISTA ESCRITORIO*/
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 50px;
+  }
+  nav {
+    height: 100px;
+  }
+  .bar-btn {
+    display: none;
+  }
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+  .nav-menu li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .div_cent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*FIN DE LA VISTA ESCRITORIO*/
+.sub_tit {
+  text-align: center;
+  font-size: 26px;
+  padding: 15px;
+}
+
+.div_sup {
+  width: 350;
+  display: flex;
+  justify-content: center;
+}
+
+.div_cent {
+  width: 350;
+  display: flex;
+  justify-content: center;
+}
+
+.div_inf {
+  width: 350;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  /* Centra el contenido dentro del encabezado */
+  padding: 1em 0;
+  background: #DE9E31;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+*{ /*es el selector universal en CSS. De forma automática, el asterisco selecciona todos los elementos en un documento.*/
+    background: #DE9E31;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+div{
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
